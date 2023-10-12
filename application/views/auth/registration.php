@@ -1,31 +1,47 @@
-
-<body>
-  <div class="layer"></div>
-<main class="page-center">
-  <article class="sign-up">
-    <h1 class="sign-up__title">Get started</h1>
-    <p class="sign-up__subtitle">Start creating the best possible user experience for you customers</p>
-    <form class="sign-up-form form" action="" method="">
-      <label class="form-label-wrapper">
-        <p class="form-label">Name</p>
-        <input class="form-input" type="text" placeholder="Enter your name" id="name" name="name" required>
-      </label>
-      <label class="form-label-wrapper">
-        <p class="form-label">Email</p>
-        <input class="form-input" type="text" placeholder="Enter your email" id="email" name="email" required>
-      </label>
-      <label class="form-label-wrapper">
-        <p class="form-label">Password</p>
-        <input class="form-input" type="password" placeholder="Enter your password" id="password" name="password" required>
-      </label>
-      <label class="form-label-wrapper">
-        <p class="form-label">Password Confirmation</p>
-        <input class="form-input" type="password" placeholder="Enter your password" id="password2" name="password2" required>
-      </label>
-      <button type="submit" class="form-btn primary-default-btn transparent-btn">Sign Up</button>
-        <label class="form-label-wrapper">
-          <a class="text-center mt-2" href="<?= base_url(''); ?>auth">Already have an account? Login!</a>
-        </label>
-    </form>
-  </article>
-</main>
+    <body class="bg-primary">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="name" name="name" type="text" placeholder="Full Name" />
+                                                <label for="inputEmail">Full Name</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="email" name="email" type="text" placeholder="name@example.com" />
+                                                <label for="inputEmail">Email address</label>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="password" name="password" type="password" placeholder="Create a password" />
+                                                        <label for="inputPassword">Password</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="password2" name="password2" type="password" placeholder="Confirm password" />
+                                                        <label for="inputPasswordConfirm">Confirm Password</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 mb-0">
+                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-footer text-center py-3">
+                                        <div class="small"><a href="<?= base_url('auth') ?>">Have an account? Go to login</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>

@@ -1,20 +1,33 @@
-<body>
-  <div class="layer"></div>
-<main class="page-center">
-  <article class="sign-up">
-    <h1 class="sign-up__title">Welcome back!</h1>
-    <p class="sign-up__subtitle">Sign in to your account to continue</p>
-    <form class="sign-up-form form" action="" method="">
-      <label class="form-label-wrapper">
-        <p class="form-label">Email</p>
-        <input class="form-input" type="email" placeholder="Enter your email" id="email" name="email" required>
-      </label>
-      <label class="form-label-wrapper">
-        <p class="form-label">Password</p>
-        <input class="form-input" type="password" placeholder="Enter your password" id="password" name="password" required>
-      </label>
-      <!-- <a class="link-info forget-link" href="##">Forgot your password?</a> -->
-      <button class="form-btn primary-default-btn transparent-btn">Sign in</button>
-    </form>
-  </article>
-</main>
+    <body class="bg-primary">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="email" name="email" type="text" placeholder="name@example.com" />
+                                                <label for="inputEmail">Email address</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="password" name="password" type="password" placeholder="*******" />
+                                                <label for="inputPassword">Password</label>
+                                            </div>
+                                            <div class="mt-4 mb-0">
+                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Login</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                        <div class="card-footer text-center py-3">
+                                          <div class="small"><a href="<?= base_url('auth/registration') ?>">Create an Account!</a></div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
